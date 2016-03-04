@@ -38,7 +38,7 @@ body a {
 
 .banner ul a {
     color: #46464F;
-    font-size: 18pt;
+    font-size: 17pt;
 }
 
 .banner a:hover {
@@ -53,7 +53,7 @@ body a {
     color: #F2644C;
 }
 
-.banner ul {
+ul {
     list-style-type: none;
     margin-top: 0;
 }
@@ -61,6 +61,75 @@ body a {
 .banner li {
     display: inline;
     padding-right: 2em;
+}
+
+
+/* MASTER PAGES */
+
+.master-list {
+    display: block;
+    width: 45em;
+    margin: auto;
+}
+
+.master-list h2 {
+    text-align: center;
+}
+
+.lists,
+.sorting {
+    width: 15em;
+    height: 300px;
+    float: left;
+}
+
+.trees,
+.graphs {
+    width: 15em;
+    height: 300px;
+    float: left;
+}
+
+.other,
+.pattern {
+    width: 15em;
+    height: 300px;
+    float: left;
+}
+
+.lists h2,
+.trees h2,
+.other h2,
+.sorting h2,
+.graphs h2,
+.pattern h2 {
+    color: grey;
+}
+
+.lists a,
+.trees a,
+.other a {
+    font-size: 15pt;
+    color: #F2644C;
+}
+
+.lists a:hover,
+.trees a:hover,
+.other a:hover {
+    color: #FFAB99;
+}
+
+.sorting a,
+.graphs a,
+.pattern a {
+    font-size: 15pt;
+    color: #01B4B8;
+}
+
+.sorting a:hover,
+.graphs a:hover,
+.pattern a:hover {
+    color: #C0ECED;
 }
 
 
