@@ -53,6 +53,14 @@ body a {
     color: #F2644C;
 }
 
+.red2 {
+    color: #FFAB99
+}
+
+.underline.on {
+    text-decoration: underline;
+}
+
 ul {
     list-style-type: none;
     margin-top: 0;
@@ -137,10 +145,66 @@ ul {
 
 @media (max-width: 699px) {
     /* up to 699px wide */
-    html {}
+    .banner h1 {
+        font-size: 20pt;
+        margin: 0;
+        height: 1.5em;
+    }
+    .banner ul a {
+        color: #46464F;
+        font-size: 12pt;
+    }
+    /* ABOUT */
+    .preview {
+        width: 85%;
+        max-width: 25em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+    .preview-grid {
+        margin-bottom: 3em;
+    }
+    .preview-block h1 {
+        font-size: 15pt;
+        color: #f3bdbe;
+        margin-left: 8%;
+    }
+    .preview-block p {
+        line-height: 1.8em;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 
 @media (min-width: 700px) {
-    /* 700px wide and up */
-    html {}
+    /* ABOUT */
+    .preview-grid {
+        width: 80%;
+        display: block;
+        margin-left: 9.5%;
+        margin-right: auto;
+        margin-top: 5em;
+        height: 70vh;
+        overflow-x: auto;
+    }
+    .preview-block {
+        display: inline;
+        max-width: 30%;
+        float: left;
+        margin: .10em;
+        text-align: center;
+        margin-left: 1em;
+    }
+    .preview-block h1 {
+        font-size: 15pt;
+        color: #F2644C;
+    }
+    .preview-block p {
+        line-height: 1.8em;
+    }
+    .preview {
+        width: 100%;
+    }
 }
