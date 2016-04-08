@@ -54,7 +54,9 @@ body a {
 }
 
 .red2 {
-    color: #FFAB99
+    color: #FCD8D2;
+    font-style: italic;
+    font-family: serif;
 }
 
 .underline.on {
@@ -80,29 +82,43 @@ ul {
     margin: auto;
 }
 
-.master-list h2 {
-    text-align: center;
-}
-
 .lists,
 .sorting {
-    width: 15em;
+    width: 45em;
     height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.master-list ul {
     float: left;
 }
 
 .trees,
 .graphs {
-    width: 15em;
+    width: 45em;
     height: 300px;
-    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .other,
 .pattern {
-    width: 15em;
+    width: 45em;
     height: 300px;
-    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* master icons */
+
+.master-icon {
+    width: 28em;
+    float: right;
 }
 
 .lists h2,
