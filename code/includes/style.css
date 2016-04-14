@@ -16,8 +16,6 @@ html {
     -webkit-text-size-adjust: none;
 }
 
-body {}
-
 body a {
     text-decoration: none;
 }
@@ -45,15 +43,19 @@ body a {
     color: grey;
 }
 
-.blue {
+.blue,
+.algorithm-name,
+.algorithm-heading {
     color: #01B4B8;
 }
 
-.red {
+.red,
+.ds-name,
+.ds-heading {
     color: #F2644C;
 }
 
-.red2 {
+.learn {
     color: #FCD8D2;
     font-style: italic;
     font-family: serif;
@@ -156,19 +158,140 @@ ul {
     color: #C0ECED;
 }
 
+.footer {
+    margin-bottom: 6em;
+}
+
+
+/* individual pages */
+
+.algorithm-name,
+.ds-name {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.algorithm-body,
+.ds-body {
+    width: 50%;
+    min-width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* MEDIA QUERIES */
 
+
+/* mobile */
+
 @media (max-width: 699px) {
-    /* up to 699px wide */
+    /* home */
+    .home {
+        display: block;
+        font-size: 18pt;
+    }
+    .home-links {
+        display: block;
+        margin: 0 auto;
+        width: 12.8em;
+    }
+    .l-home {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: .8em;
+        font-size: 30pt;
+    }
+    .ds {
+        width: 8.5em;
+        background-color: white;
+        margin-top: 1em;
+        border-color: #F2644C;
+        border-style: solid;
+        border-width: .2em;
+        color: white;
+        text-align: center;
+    }
+    .ds .hidden {
+        color: #F2644C;
+    }
+    .a {
+        width: 8.5em;
+        margin-top: 2em;
+        background-color: white;
+        border-color: #01B4B8;
+        border-style: solid;
+        border-width: .2em;
+        color: white;
+        text-align: center;
+    }
+    .a .hidden {
+        color: #01B4B8;
+    }
+    .a p,
+    .ds p {
+        margin-top: 3em;
+    }
     .banner h1 {
-        font-size: 20pt;
+        font-size: 25pt;
         margin: 0;
         height: 1.5em;
     }
     .banner ul a {
         color: #46464F;
         font-size: 12pt;
+    }
+    /* master pages */
+    .master-list {
+        display: block;
+        width: 95%;
+        margin: auto;
+        font-size: 12pt;
+    }
+    .master-list a {
+        font-size: 14pt;
+    }
+    .lists,
+    .sorting {
+        width: 95%;
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trees,
+    .graphs {
+        width: 95%;
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .other,
+    .pattern {
+        width: 95%;
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* master icons */
+    .master-icon {
+        width: 100%;
+    }
+    /* individual pages */
+    .algorithm-name,
+    .ds-name {
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .algorithm-body,
+    .ds-body {
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* ABOUT */
     .preview {
@@ -194,7 +317,71 @@ ul {
     }
 }
 
+
+/* desktop */
+
 @media (min-width: 700px) {
+    /* home */
+    .home-links {
+        display: block;
+        margin: 0 auto;
+        max-width: 65em;
+    }
+    .home {
+        display: block;
+        font-size: 20pt;
+    }
+    .home a:visited {
+        color: white;
+    }
+    .l-home {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 1.5em;
+        font-size: 50pt;
+    }
+    .ds {
+        width: 9.2em;
+        float: left;
+        margin-left: 20%;
+        margin-top: 2em;
+        background-color: #F2644C;
+        border-color: #F2644C;
+        border-style: solid;
+        border-width: .2em;
+        color: white;
+        text-align: center;
+    }
+    .ds:hover {
+        background-color: white;
+    }
+    .ds .hidden {
+        color: #F2644C;
+    }
+    .a {
+        width: 9.2em;
+        float: right;
+        margin-right: 20%;
+        margin-top: 2em;
+        background-color: #01B4B8;
+        border-color: #01B4B8;
+        border-style: solid;
+        border-width: .2em;
+        color: white;
+        text-align: center;
+    }
+    .a p,
+    .ds p {
+        margin-top: 3.5em;
+    }
+    .a span {
+        color: #01B4B8;
+    }
+    .a:hover {
+        background-color: white;
+    }
     /* ABOUT */
     .preview-grid {
         width: 80%;
@@ -204,6 +391,9 @@ ul {
         margin-top: 5em;
         height: 70vh;
         overflow-x: auto;
+    }
+    a:active {
+        text-decoration: underline;
     }
     .preview-block {
         display: inline;
