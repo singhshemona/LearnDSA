@@ -24,19 +24,17 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Selection Sort</h2>
+        <h2 class="algorithm-name">Selection Sort <span class="runtime">O(n<sup>2</sup>)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
+        <p>Selection sort is best used to sort small sequences due to its poor runtime. It is also effective if the sequence is almost sorted, and is used with arrays or lists.</p>
 
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
+        <p>Find the smallest element. Swap it with the first element. Find the second-smallest element. Swap it with the second element. Find the third-smallest element. Swap it with the third element. Repeat finding the next-smallest element, and swapping it into the correct position until the array is sorted.</p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>Inserting elements altogether takes O(n) time, the time to remove elements is proportional to the number of elements, therefore it runs in O(n<sup>2</sup>) time.</p>
         <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Suppose you had a deck of unsorted cards in your hand and you wanted to sort them, with the smallest elements on your left and the largest elements on your right. You would start by finding the smallest card in the list, putting that card as the first card in your sorted section, finding the next smallest card in the list, putting that card as the second card in your sorted section, and so on until you have a sorted list.</p>
     </div>
 
 </body>

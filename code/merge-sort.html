@@ -24,19 +24,22 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Merge Sort</h2>
+        <h2 class="algorithm-name">Merge Sort <span class="runtime">O(nlogn)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
+        <p>Merge Sort is a sorting algorithm that uses a divide-and-conquer method to sort given data.</p>
 
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Divide by finding the number (q) of the position midway between a starting point (p) and an ending point (r). Do this by finding a midpoint: add p and r, divide by 2, and round down. Recursively sorting the subarrays in each of the two subproblems created by the divide step. That is, recursively sort the subarray array[p..q] and recursively sort the subarray[q+1..r]. Combine by merging the two sorted subarrays back into the single sorted subarray array[p..r].
+        </p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>At each pass of mergesort, the the size of the sorted subsections double. First there are 2 subsections, then 4, then 8, etc. This doubling gives us logn time. Each pass of the data will take the time proportional to number of elements there are, so this gives us n time.</p>
 
         <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Suppose you have a list of 10 places to travel and you have two friends. You ask both the friends to order the list in descending order of their liking. You will now have two arrays after that, and you want to count the number of differences, or inversions they have. This will be done with mergesort. The more inversions, the more dissimilar there choices are, the less inversions, the more similar their choices are.</p>
+        <h3 class="algorithm-heading">Sources</h3>
+        <a href="https://www.quora.com/What-is-the-real-time-application-of-merge-sorting
+">Quora</a>
     </div>
 
 </body>

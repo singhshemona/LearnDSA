@@ -24,20 +24,21 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Insertion Sort</h2>
+        <h2 class="algorithm-name">Insertion Sort <span class="runtime">O(n<sup>2</sup>)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
+        <p>Insertion Sort is an excellent algorithm for sorting small sequences (less than 50 elements), since it is simple to program and small sequences necessarily have few pairs out of order. It is also effective if the sequence is almost sorted.</p>
 
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
+        <p>The algorithm proceeds by considering one element at a time, placing the element in the correct order relative to those before it. We start with the first element in the array, which is trivially sorted by itself. When considering the next element in the array, if it is smaller than the first, we swap them. We then move onto the third element and compare it with the elements before it, swapping as needed to put it in the right place. We continue this process until the array is sorted.</p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>In the worst case possible every element needed to be sorted is less than every element to its left. This would mean the array starts out in reverse order, making it run in O(n<sup>2</sup>).</p>
         <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Suppose you’re holding sorted cards in your hand. The dealer hands you one new card, and you have to put it in the right place to maintain the sorting. The new card could be smaller than some of the cards you're already holding, so you go down the line, comparing the new card against each card in your hand, until you find the place to put it. You insert the new card in the right place, and once again, your hand holds fully sorted cards. You repeat the procedure with any more new cards you are given. You only do this one at a time.</p>
+        <h3 class="algorithm-heading">Sources</h3>
+        <a href="https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort">Khan Academy</a>
     </div>
+
 
 </body>
 

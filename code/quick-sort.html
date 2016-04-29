@@ -24,19 +24,18 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Quick Sort</h2>
+        <h2 class="algorithm-name">Quick Sort <span class="runtime">O(n<sup>2</sup>)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
-
+        <p>Quick Sort is a divide-and-conquer sorting algorithm that uses randomization.
+        </p>
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
+        <p>Through the Algorithm: divide – pick a random element as your “pivot point” (lets call the pivot point x). Consider we have three separate lists: elements less than x (L), elements equal than x (E), and elements greater than x (G). Remove each element from the sequence. Insert each element into either L, E or G (see above) depending on the result of comparing it with the pivot point. Sort through L and G. Finally join together L, E and G.</p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>Insertion and removal is at the beginning or end with a time of O(1), leaving the partition step taking O(n) because it must go through each element.
+        </p>
         <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Suppose you have a list of tasks that you want to complete, but you don’t know in what order to finish them. Some have more urgency than others. Pick one task you think should be your “pivot” - the task that has urgency, but not to the point of immediacy. Organize all other tasks as tasks less urgent than your pivot task, equal to your pivot task, or of greater urgency to your pivot task. Sort through your tasks to the left and right of your pivot task again with quicksort. Now, you have a sorted list of tasks you can get started on!</p>
     </div>
 
 </body>

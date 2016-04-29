@@ -179,6 +179,15 @@ ul {
     margin-right: auto;
 }
 
+.method-name {
+    font-weight: bold;
+}
+
+.runtime {
+    color: lightgray;
+    font-style: italic;
+}
+
 
 /* MEDIA QUERIES */
 

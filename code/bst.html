@@ -27,16 +27,32 @@
         <h2 class="ds-name">Binary Search Trees</h2>
 
         <h3 class="ds-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Binary Search Tree is just like a binary tree except the binary search tree has a property where each node has a key-value pair (k,v) where the tree is sorted by the key to easier access certain values. Each node either has 0, 1 or 2 nodes. There is one root node that starts the tree and then depending on the child node’s key, it will either be the left child or right child. The property on determining whether a node is either a left or right node is by its key. If a child node’s key is less than the parent node’s key then that child will be the left child. If the child node’s key is greater than the parent node’s key then that child will be the right child. This is a big property for the binary search tree and is why this is a popular way for storing data because of the time it takes to find a certain node in the tree. It ends up being a decision where you will have a target value and you check the root first and if the value’s key is equal to the root’s key then you found your value, if not you check the key of the root and if the root key is greater than your value’s key you do the same procedure on the left child of the root which can also be a subtree and if the root’s key is less than the value’s key than you repeat the procedure on the right tree.</p>
 
         <h3 class="ds-heading">Key Methods</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="ds-heading">Animation</h3>
-        <p>[insert animation]</p>
+        <ul>
+            <li><span class="method-name">get(k)</span>: returns the value at the node with key k, if such node does not exist it will return null</li>
+            <li><span class="method-name">put(k,v)</span>: Puts the value v with the node with key k and returns an old value if such value exists</li>
+            <li><span class="method-name">remove(k)</span>: Removes the entire node with key k if such node exists, else returns null</li>
+        </ul>
 
         <h3 class="ds-heading">Examples</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+    </div>
+    <div class="algorithm-body">
+        <h2 class="algorithm-name">Binary Search <span class="runtime">O(logn)</span></h2>
+
+        <h3 class="algorithm-heading">Description</h3>
+        <p>Binary search is used to quickly find a value in a sorted sequence, therefore its most commonly used with arrays and indexed lists.</p>
+
+        <h3 class="algorithm-heading">Procedure</h3>
+        <p>Consider we are trying to find some target value in a simply array. Binary search maintains an adjacent subsequence of the starting sequence where the target value is located. This is called the search space. At the start, this search space is the entire sequence. At each step, the algorithm compares the median value in the search space to the target value. Based on the comparison (and because the sequence is sorted), it can then eliminate half of the search space. If the median is equal to the target value, we’ve found our target value. If it is bigger than the target value, we know to eliminate the right side and perform binary search on the left side now. If it is less than the target value we know to eliminate the left side and perform binary search on the right side now. By doing this repeatedly, it will eventually be left with a search space consisting of a single element, the target value.</p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>Each comparison binary search uses, halves the search space, so it will never use more than O(logn) comparisons to find the target value.</p>
+        <h3 class="algorithm-heading">Examples</h3>
+        <p>Suppose you phonebook sorted by last names. If you’re trying to find a particular last name, you first go to the section of the phonebook that starts with the first letter of the name. At this section, you are either on the right page you need to be, ahead of the page you need to be, or behind the page you need to be. If you are on the right page, you’re done, there is the number you are looking for. If you are ahead, you discard what is on the right of the phone book and start looking on the left. If you are behind, you discard what is on the left of the phone book, and start looking on the right.</p>
+        <h3 class="algorithm-heading">Sources</h3>
+        <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/">Top Coder</a>
     </div>
 
 </body>

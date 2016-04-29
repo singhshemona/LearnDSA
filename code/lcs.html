@@ -24,19 +24,22 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Longest Common Subsequence (LCS)</h2>
+        <h2 class="algorithm-name">Longest Common Subsequence (LCS) <span class="runtime">O(n+m)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
-
+        <p>Given 2 strings X and Y, the algorithm finds the longest common subsequence (LCS) of both X and Y. a sequence that can be obtained from another sequence by deleting some elements without changing the order of the remaining elements. For example, the LCS of ABCDEFG and XZACKDFWGH is ACDFG.</p>
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
+        <ol>
+            <li>Consider two sequences, X and Y. Let X be of length m = X[0..m-1] and Y be of length n = Y[0..n-1] and Let L(X[0..m-1], Y[0..n-1]) stand for the length of the LCS of X and Y</li>
+            <li>If the last characters of both sequences match (in other words, X[m-1] == Y[n-1]) then apply this rule: L(X[0..m-1], Y[0..n-1]) = 1 + L(X[0..m-2], Y[0..n-2])
+            </li>
+            <li>If last characters of both sequences don’t match (in other words, X[m-1] !=Y[n-1]) then apply this rule: L(X[0..m-1], Y[0..n-1]) = MAX ( L(X[0..m-2], Y[0..n-1]), L(X[0..m-1], Y[0..n-2])</li>
+        </ol>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>The while loop is done n times since we remove one of the nodes each time, so time for while loop is O(n log n). Total time is therefore O(n log n) + O(n log n), or just O(n log n)</p>
         <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>You could use LCS to determine how similar two documents are for plagiarism.
+        </p>
     </div>
 
 </body>

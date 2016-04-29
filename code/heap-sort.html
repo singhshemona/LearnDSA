@@ -24,19 +24,15 @@
     </div>
 
     <div class="algorithm-body">
-        <h2 class="algorithm-name">Heap Sort</h2>
+        <h2 class="algorithm-name">Heap Sort <span class="runtime">O(nlogn)</span></h2>
 
         <h3 class="algorithm-heading">Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Animation</h3>
-        <p>[insert animation]</p>
+        <p>Traditional sorting algorithm for a given binary tree, an array, or a heap, where we turn data into a heap (if not already), use the heap to sort the array/tree by removing the max number and putting it at the end of the array/tree, continue to do step 2 until the heap is empty and the array/tree is now completely sorted.</p>
 
         <h3 class="algorithm-heading">Procedure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
-
-        <h3 class="algorithm-heading">Examples</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed rhoncus ante, vitae sodales ligula. Nunc ac ultricies magna. Vestibulum ultrices purus libero, non dignissim turpis porta eu. Ut nibh ligula, laoreet nec augue non, finibus rhoncus nulla. Suspendisse potenti. Pellentesque nisl massa, scelerisque id sodales et, egestas non magna. In maximus ante nec laoreet elementum. In dapibus imperdiet sapien, at blandit ante rutrum ut. Mauris in facilisis nisi.</p>
+        <p>Given an array, heapify the array. while the array isn’t empty, remove and replace the root; and down heap the new root node.</p>
+        <h3 class="algorithm-heading">Runtime Explaination</h3>
+        <p>the While loop is done n times since we remove one of the nodes each time, so time for while loop is O(n log n). Total time is therefore O(n log n) + O(n log n), or just O(n log n)</p>
     </div>
 
 </body>
